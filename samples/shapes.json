@@ -1,0 +1,16 @@
+{
+  "degrees": {
+    "1": {
+      "dim_k": 2,
+      "dim_k_minus_1": 2
+    },
+    "2": {
+      "dim_k": 2,
+      "dim_k_minus_1": 2
+    },
+    "3": {
+      "dim_k": 3,
+      "dim_k_minus_1": 2
+    }
+  }
+}
