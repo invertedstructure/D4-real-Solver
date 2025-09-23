@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MoveBlocksSigned",
+  "type": "object",
+  "required": [
+    "blocks"
+  ],
+  "properties": {
+    "blocks": {
+      "type": "object",
+      "patternProperties": {
+        "^[0-9]+$": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

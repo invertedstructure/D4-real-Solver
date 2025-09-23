@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MoveBlocksGF2",
+  "type": "object",
+  "required": [
+    "blocks"
+  ],
+  "properties": {
+    "blocks": {
+      "type": "object",
+      "description": "C_k: C_k(X) -> C_k(Y) over GF(2).",
+      "patternProperties": {
+        "^[0-9]+$": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "enum": [
+                0,
+                1
+              ]
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

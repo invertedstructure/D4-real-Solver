@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BoundariesSigned",
+  "type": "object",
+  "required": [
+    "blocks"
+  ],
+  "properties": {
+    "blocks": {
+      "type": "object",
+      "description": "Degree-indexed signed boundary maps d_k over Z.",
+      "patternProperties": {
+        "^[0-9]+$": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

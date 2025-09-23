@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HomotopyBlocksGF2",
+  "type": "object",
+  "required": [
+    "blocks"
+  ],
+  "properties": {
+    "blocks": {
+      "type": "object",
+      "description": "H_k: C_k -> C_{k+1} over GF(2).",
+      "patternProperties": {
+        "^[0-9]+$": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "enum": [
+                0,
+                1
+              ]
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

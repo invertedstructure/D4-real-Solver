@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RepresentativesGF2",
+  "type": "object",
+  "required": [
+    "k3",
+    "k2",
+    "c3_dom",
+    "c3_cod",
+    "c2_dom",
+    "c2_cod"
+  ],
+  "properties": {
+    "k3": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "k2": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "c3_dom": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "enum": [
+          0,
+          1
+        ]
+      }
+    },
+    "c3_cod": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "enum": [
+          0,
+          1
+        ]
+      }
+    },
+    "c2_dom": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "enum": [
+          0,
+          1
+        ]
+      }
+    },
+    "c2_cod": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "enum": [
+          0,
+          1
+        ]
+      }
+    }
+  },
+  "additionalProperties": false
+}

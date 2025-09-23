@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TriangleTemplateGF2",
+  "type": "object",
+  "description": "For each degree k, supply A_k, B_k, J_k with \u2202J + J\u2202 = A \u2212 B (GF(2)).",
+  "patternProperties": {
+    "^[0-9]+$": {
+      "type": "object",
+      "required": [
+        "A",
+        "B",
+        "J"
+      ],
+      "properties": {
+        "A": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "enum": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        "B": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "enum": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        "J": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "enum": [
+                0,
+                1
+              ]
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
